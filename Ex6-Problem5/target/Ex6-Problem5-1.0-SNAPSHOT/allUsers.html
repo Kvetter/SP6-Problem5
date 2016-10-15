@@ -1,0 +1,22 @@
+
+<div class="col-md-12">
+    <table class="table">
+        <thead >
+            <tr>
+                <td>Picture</td>
+                <td>Name</td>
+                <td>Details</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="user in ctrl.users">
+                <td><img src="{{user.picture.thumbnail}}" alt=""></td>
+                <td>{{user.first}} {{user.last}}</td>
+                <td>
+                    <a href="#/details/{{user.first}}">Details</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
